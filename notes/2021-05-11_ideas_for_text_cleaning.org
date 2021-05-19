@@ -1,0 +1,14 @@
+* Use enchant spell checker to find spelling errors
+* Use BERT to fix them 
+* Maybe some more machine learning?
+
+* New DB Pipline
+      - XML 
+      - => (parse_XML: 
+            - xml *-bs4->*
+            - text *-enchant->*
+            - text w/ errors marked *-BERT->*
+            - text with errors corrected *-keyword_extractor->*
+            -  keywords -|)
+      - => (error corrected text, keywords)
+      

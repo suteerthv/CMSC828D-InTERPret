@@ -1,0 +1,28 @@
+* *NITIN AND I TALKED ask if there are more questions*
+* get_data/<id>
+	- Returns a singular object (not a list) 
+	- eq. to a row in the table
+	- {id: , paper: , title:, body, date, keywords:,.}
+		- For keywords
+			* Call the get_keywords
+			* Query: using keyword table
+#+BEGIN_SRC
+      SELECT string_agg(keyword, ", ") FROM keywords GROUP BY id WHERE id = {input_id} LIMIT 10
+#+END_SRC
+      This need work, but I am tired
+**** Query using ts_vector 
+      You get this with the query 
+* get_range / <start date>/<end date>
+	* Dates are in format YYYYMMDD
+	* Given a range of dates
+	* Use the WHERE clause to filter in *the database* 
+	* returns 
+#+BEGIN_SRC
+[{id:, date:, paper:, title:,}]
+#+END_SRC
+* get_keywords / <keyword>
+      * keyword -> ids
+#+BEGIN_SRC
+[{id:, date:, paper:, title:,}]
+#+END_SRC
+      * Do keywords for like 10 interesting words

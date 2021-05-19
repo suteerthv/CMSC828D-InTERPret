@@ -1,0 +1,6 @@
+Articles: 
+ID (Primary Key), Body, Date, Paper
+
+Keywords:
+Keyword, ID
+

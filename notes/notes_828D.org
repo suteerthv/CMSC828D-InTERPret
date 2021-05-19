@@ -1,0 +1,14 @@
+* Having a recommendation of articles from keywords in the current
+* doing a keyword search 
+** Nice and fast way to query 
+* Filter by topics 
+* Have an on this day on the opening page
+* Tasks
+** Vagrant
+      Suteerth 
+** Front end / UI 
+      Hana,Farnaz,Rachael
+** Flask Setup
+      Nitin
+** Dataprocessing and storing
+      Suteerth Vishnu
